@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "BartenderApp", "BartenderApp\BartenderApp.njsproj", "{3EA0C32C-8AAA-4479-987E-A0D3A9153696}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA0C32C-8AAA-4479-987E-A0D3A9153696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA0C32C-8AAA-4479-987E-A0D3A9153696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA0C32C-8AAA-4479-987E-A0D3A9153696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA0C32C-8AAA-4479-987E-A0D3A9153696}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {414ABC1B-0A77-42C5-BFD6-B6CC088D86F3}
+	EndGlobalSection
+EndGlobal

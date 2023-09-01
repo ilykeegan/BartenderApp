@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cocktail Menu</title>
+</head>
+<body>
+   <h1>Cocktail Menu</h1>
+   <ul id="cocktailList">
+
+   </ul>
+   <a href="/">Back to Home</a>
+
+   <script>
+        var cocktails = [
+            { name: "Mojito", description: "Refreshing minty cocktail" },
+            { name: "Martini", description: "Classic gin-based cocktail" },
+            
+        ];
+
+   
+        function generateCocktailList() {
+            var cocktailList = document.getElementById("cocktailList");
+
+            cocktails.forEach(function(cocktail) {
+                var listItem = document.createElement("li");
+                var cocktailName = document.createElement("h2");
+                cocktailName.textContent = cocktail.name;
+                var cocktailDescription = document.createElement("p");
+                cocktailDescription.textContent = cocktail.description;
+                var orderButton = document.createElement("button");
+                orderButton.textContent = "Place Order";
+                orderButton.addEventListener("click", function() {
+                    placeOrder(cocktail.name);
+                });
+
+                listItem.appendChild(cocktailName);
+                listItem.appendChild(cocktailDescription);
+                listItem.appendChild(orderButton);
+                cocktailList.appendChild(listItem);
+            });
+        }
+
+    
+        function placeOrder(cocktailName) {
+        
+            alert("Order placed for " + cocktailName);
+        }
+
+
+        generateCocktailList();
+   </script>
+</body>
+</html>
